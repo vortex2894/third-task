@@ -6,6 +6,7 @@ import com.epam.task.third.exceptions.DataException;
 import com.epam.task.third.parsers.StringParser;
 import com.epam.task.third.validators.impl.PyramidValidator;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.mockito.ArgumentMatchers;
 import org.mockito.Mockito;
@@ -34,8 +35,8 @@ public class PointCreatorTest {
     private static PyramidValidator validator;
     private static PointCreator creator;
 
-    @Test
-    public void testPointCreationProcess() throws DataException {
+    @BeforeClass
+    public static void init() throws DataException {
 
         reader = Mockito.mock(DataReader.class);
         when(reader.readData(ArgumentMatchers.anyString())).thenReturn(TEST_ARRAY);
@@ -54,6 +55,11 @@ public class PointCreatorTest {
         when(validator.isValid(FIRST_POINT_ARRAY)).thenReturn(true);
         when(validator.isValid(SECOND_POINT_ARRAY)).thenReturn(false);
         when(validator.isValid(THIRD_POINT_ARRAY)).thenReturn(true);
+
+    }
+
+    @Test
+    public void testPointCreationProcess() throws DataException {
 
         creator = new PointCreator(reader, parser, validator);
 
