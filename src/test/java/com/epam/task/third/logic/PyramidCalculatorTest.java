@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-public class TestPyramidCalculator {
+public class PyramidCalculatorTest {
 
     private final static double DELTA = 0.01;
     private final static Point firstPoint = new Point(2, -1, 1);
