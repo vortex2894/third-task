@@ -5,7 +5,7 @@ import java.util.List;
 
 public class StringParser {
 
-    private final static String STRING_SPLITTER = " ";
+    private static final String STRING_SPLITTER = " ";
 
     public List<Integer> parse(String data) {
 

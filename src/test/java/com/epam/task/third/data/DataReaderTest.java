@@ -9,9 +9,9 @@ import java.util.List;
 
 public class DataReaderTest {
 
-    private final static String TEST_DATA = "src/test/resources/testDataForPoints.txt";
-    private final static String INVALID_DATA = "src/test/resources/hello.txt";
-    private final static List<String> EXPECTED = Arrays.asList("3t 4 1", "0 0 0 0", "1 3 7", "6 5 8 9");
+    private static final String TEST_DATA = "src/test/resources/testDataForPoints.txt";
+    private static final String INVALID_DATA = "src/test/resources/hello.txt";
+    private static final List<String> EXPECTED = Arrays.asList("3t 4 1", "0 0 0 0", "1 3 7", "6 5 8 9");
 
     private final DataReader reader = new DataReader();
 

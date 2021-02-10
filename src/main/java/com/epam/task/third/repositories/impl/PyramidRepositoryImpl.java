@@ -1,9 +1,9 @@
-package com.epam.task.third.repository.impl;
+package com.epam.task.third.repositories.impl;
 
 import com.epam.task.third.entities.IdentifiablePyramid;
 import com.epam.task.third.entities.Pyramid;
-import com.epam.task.third.repository.PyramidRepository;
-import com.epam.task.third.repository.PyramidSpecification;
+import com.epam.task.third.repositories.PyramidRepository;
+import com.epam.task.third.repositories.PyramidSpecification;
 import com.epam.task.third.exceptions.RepositoryException;
 
 import java.util.ArrayList;
@@ -40,6 +40,11 @@ public class PyramidRepositoryImpl implements PyramidRepository {
     }
 
     @Override
+    public Map<Long, IdentifiablePyramid> getPyramids() {
+        return pyramids;
+    }
+
+    @Override
     public List<Pyramid> query(PyramidSpecification specification) {
         List<Pyramid> listOfPyramids = new ArrayList<>();
         for (IdentifiablePyramid pyramid : pyramids.values()) {
@@ -48,9 +53,5 @@ public class PyramidRepositoryImpl implements PyramidRepository {
             }
         }
         return listOfPyramids;
-    }
-
-    public Map<Long, IdentifiablePyramid> getPyramids() {
-        return pyramids;
     }
 }

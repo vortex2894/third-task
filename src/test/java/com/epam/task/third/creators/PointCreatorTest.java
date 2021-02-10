@@ -18,17 +18,17 @@ import static org.mockito.Mockito.when;
 
 public class PointCreatorTest {
 
-    private final static String FIRST_STRING = "3t 4 1";
-    private final static String SECOND_STRING = "0 0 0 0";
-    private final static String THIRD_STRING = "1 3 7";
-    private final static String FOURTH_STRING = "6 5 8 9";
+    private static final String FIRST_STRING = "3t 4 1";
+    private static final String SECOND_STRING = "0 0 0 0";
+    private static final String THIRD_STRING = "1 3 7";
+    private static final String FOURTH_STRING = "6 5 8 9";
 
-    private final static List<Integer> FIRST_POINT_ARRAY = Arrays.asList(0, 0, 0, 0);
-    private final static List<Integer> SECOND_POINT_ARRAY = Arrays.asList(1, 3, 7);
-    private final static List<Integer> THIRD_POINT_ARRAY = Arrays.asList(6, 5, 8, 9);
+    private static final List<Integer> FIRST_POINT_ARRAY = Arrays.asList(0, 0, 0, 0);
+    private static final List<Integer> SECOND_POINT_ARRAY = Arrays.asList(1, 3, 7);
+    private static final List<Integer> THIRD_POINT_ARRAY = Arrays.asList(6, 5, 8, 9);
 
-    private final static List<String> TEST_ARRAY = Arrays.asList(FIRST_STRING, SECOND_STRING, THIRD_STRING, FOURTH_STRING);
-    private final static String TEST_DATA = "src/test/resources/testDataForPoints.txt";
+    private static final List<String> TEST_ARRAY = Arrays.asList(FIRST_STRING, SECOND_STRING, THIRD_STRING, FOURTH_STRING);
+    private static final String TEST_DATA = "src/test/resources/testDataForPoints.txt";
 
     private static DataReader reader;
     private static StringParser parser;

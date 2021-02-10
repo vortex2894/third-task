@@ -12,18 +12,18 @@ import java.util.List;
 public class PyramidIdComparatorTest {
 
 
-    private final static Point firstPoint = new Point(3, -1, 1);
-    private final static Point secondPoint = new Point(6, 5, 4);
-    private final static Point thirdPoint = new Point(4, 2, -1);
-    private final static Point fourthPoint = new Point(5, 1, 3);
+    private static final Point firstPoint = new Point(3, -1, 1);
+    private static final Point secondPoint = new Point(6, 5, 4);
+    private static final Point thirdPoint = new Point(4, 2, -1);
+    private static final Point fourthPoint = new Point(5, 1, 3);
 
-    private final static IdentifiablePyramid firstPyramid =
+    private static final IdentifiablePyramid firstPyramid =
             new IdentifiablePyramid(firstPoint, secondPoint, thirdPoint, fourthPoint);
 
-    private final static IdentifiablePyramid secondPyramid =
+    private static final IdentifiablePyramid secondPyramid =
             new IdentifiablePyramid(secondPoint, thirdPoint, fourthPoint, firstPoint);
 
-    private final static IdentifiablePyramid thirdPyramid =
+    private static final IdentifiablePyramid thirdPyramid =
             new IdentifiablePyramid(thirdPoint, fourthPoint, firstPoint, secondPoint);
 
     @Test

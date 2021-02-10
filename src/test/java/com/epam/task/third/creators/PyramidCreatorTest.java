@@ -19,15 +19,14 @@ import static org.mockito.Mockito.when;
 
 public class PyramidCreatorTest {
 
+    private static final String FIRST_STRING = "4 5 6 2 4 7 6 2 1 4 7 2";
+    private static final String SECOND_STRING = "2q 7w 4 5 1 3 9 5 7 3 6 3";
+    private static final String THIRD_STRING = " ";
 
-    private final static String FIRST_STRING = "4 5 6 2 4 7 6 2 1 4 7 2";
-    private final static String SECOND_STRING = "2q 7w 4 5 1 3 9 5 7 3 6 3";
-    private final static String THIRD_STRING = " ";
+    private static final List<Integer> VALID_ARRAY = Arrays.asList(4, 5, 6, 2, 4, 7, 6, 2, 1, 4, 7, 2);
 
-    private final static List<Integer> VALID_ARRAY = Arrays.asList(4, 5, 6, 2, 4, 7, 6, 2, 1, 4, 7, 2);
-
-    private final static List<String> TEST_ARRAY = Arrays.asList(FIRST_STRING, SECOND_STRING, THIRD_STRING);
-    private final static String TEST_DATA = "src/test/resources/pyramids.txt";
+    private static final List<String> TEST_ARRAY = Arrays.asList(FIRST_STRING, SECOND_STRING, THIRD_STRING);
+    private static final String TEST_DATA = "src/test/resources/pyramids.txt";
 
 
     private static DataReader reader;

@@ -14,7 +14,7 @@ import org.apache.log4j.Logger;
 
 public class PointCreator extends Creator {
 
-    private final static Logger LOGGER = Logger.getLogger(PointCreator.class);
+    private static final Logger LOGGER = Logger.getLogger(PointCreator.class);
 
     public PointCreator(DataReader reader, StringParser parser, Validator validator) {
         super(reader, parser, validator);

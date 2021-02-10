@@ -1,4 +1,4 @@
-package com.epam.task.third.repository;
+package com.epam.task.third.repositories;
 
 import com.epam.task.third.entities.IdentifiablePyramid;
 

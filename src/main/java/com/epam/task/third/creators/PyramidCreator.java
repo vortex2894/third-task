@@ -13,7 +13,7 @@ import java.util.List;
 
 public class PyramidCreator extends Creator {
 
-    private final static Logger LOGGER = Logger.getLogger(PyramidCreator.class);
+    private static final Logger LOGGER = Logger.getLogger(PyramidCreator.class);
 
     public PyramidCreator(DataReader reader, StringParser parser, Validator validator) {
         super(reader, parser, validator);
